@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container2">
+        <div class="grid-item grid-header">
+            <nav class="container-menu">
+                <ul>
+                    <li><a href="index.html"><img src="IMG/navbar_home.png">Home</a></li>
+                    <li><a href="paginas.html"><img src="IMG/navbar_shop.png">Páginas</a></li>
+                    <li><a href="#"><img src="">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+            <div class="grid-item grid-main">
+                <div class="container-titulopag"><h4>Páginas</h4></div>
+                <p>Tiendas virtuales</p>
+                <div id="app">
+                <div v-for= "carta of cartas">
+                <div class="container-card">
+                    <img class="fm-item container-card__img" v-bind:src="carta.imgLogo">
+                    <h3 class="fm-item container-card__h3">{{carta.titulo}}</h3>    
+                    <a v-bind:href="carta.url" target="_blank" class="fm-item container-card__btn">Entrar</a>
+                </div>
+            </div>
+                </div>
+            </div>
+        
+        <div class="grid-item grid-footer">
+            <a href="https://wwww.facebook.com"  target="_blank"><img src="IMG/fb_footer.png"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="IMG/ig_footer.png"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="IMG/t_footer.png"></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
