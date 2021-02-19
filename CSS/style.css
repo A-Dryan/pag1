@@ -42,13 +42,15 @@ grid-area: portada;
 .container-portada{
     position: relative;
     width: 100vw;
+    height: 91vh;
     filter: saturate(1.5);
     filter: grayscale(.2);
 }
 .container-portada img{
     object-fit: none;
-    height: 91vh;
-    width: 100vw;
+    position: fixed;
+    height: 100%;
+    width: 100%;
     z-index: 5;
 }
 .container-portada__titulo{
@@ -56,11 +58,11 @@ grid-area: portada;
     align-items: center;
     cursor: default;
     position: absolute;
-    bottom: 15vh;
-    padding-left: 10vh;
-    width: 100vw;
-    height: 25vh;
-    font-size: 15vh;
+    bottom: 0;
+    padding-left: 5vh;
+    width: 40vw;
+    height: 100%;
+    font-size: 7vw;
     color: rgb(255, 255, 255);
     background-color: rgba(82, 193, 201, 0.699);
     z-index: 10;
@@ -127,7 +129,7 @@ grid-area: portada;
 }
 
 .container-menu li:hover{
-    border-bottom: 2px solid #fff;
+    border-bottom: 3.5px solid #fff;
 }
 
 /* ----------MAIN -----------*/
@@ -214,6 +216,8 @@ grid-area: portada;
 /*------------- PARRAFOS-ESTILOS ------------*/
 .container-section{
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -221,24 +225,23 @@ grid-area: portada;
 }
 .container-section__parraf1{
     display: flex;
-    background-color: #3bc0a3;
-    height: 28vh;
-    width: 45vw;
-    padding: 2vh;
-    margin: 0px 10vw;
+    height: 38vh;
+    width: 100%;
     align-items: center;
     text-align: center;
     border-radius: 2vh;
-    flex-wrap: wrap;
+    flex-direction: row;
     font-size: 3vh;
 }
 .container-section__parraf1-txt{
 display: flex;
-justify-content: start;
+justify-content: center;
 align-items: center;
-height: 90%;
-width: 50%;
-color: #fff;
+text-align: center;
+height: 100%;
+width: 60vw;
+color: #000;
+background-color: #fff;
 padding: 20px;
 transition: all ease-out 0.15s;
 overflow: hidden;
@@ -248,20 +251,20 @@ overflow: hidden;
 transform: scale(1.02);
 }
 
-.container-section__parraf1-img{
-    width: 50%;
-    height: 95%;
+.container-section__parraf1-title{
+    display: flex;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    font-size: 3vw;
+    height: 100%;
+    color: rgb(161, 161, 161);
+    background-color: rgba(216, 249, 252, 0.699);
     transition: all ease-out 0.15s;
 }
-.container-section__parraf1-img img{
-    height: 95%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20%;
-    
-}
-.container-section__parraf1-img:hover{
+
+.container-section__parraf1-title:hover{
     transform: scale(1.02);
 }
 
