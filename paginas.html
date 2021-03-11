@@ -25,13 +25,7 @@
                 <div class="container-titulopag"><h4>Páginas</h4></div>
                 <p>Tiendas virtuales</p>
                 <div id="app">
-                <div v-for= "carta of cartas">
-                <div class="container-card">
-                    <img class="fm-item container-card__img" v-bind:src="carta.imgLogo">
-                    <h3 class="fm-item container-card__h3">{{carta.titulo}}</h3>    
-                    <a v-bind:href="carta.url" target="_blank" class="fm-item container-card__btn">Entrar</a>
-                </div>
-            </div>
+                    <Cards v-for="carta of cartas" :titulo="carta.titulo" :imgLogo="carta.imglogo" :url="carta.url"></Cards>
                 </div>
             </div>
         
@@ -43,6 +37,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="components/Cards.js"></script>
     <script src="JS/app.js"></script>
 </body>
 </html>

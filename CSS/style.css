@@ -224,6 +224,7 @@ grid-area: portada;
     flex-wrap: wrap;
 }
 .container-section__parraf1{
+    padding: 4px;
     display: flex;
     height: 38vh;
     width: 100%;
@@ -246,6 +247,9 @@ padding: 20px;
 transition: all ease-out 0.15s;
 overflow: hidden;
 }
+.container-section__parraf1-txt ul li{
+   margin: 20px;
+    }
 
 .container-section__parraf1-txt:hover{
 transform: scale(1.02);
